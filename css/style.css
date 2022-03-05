@@ -1,0 +1,142 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Anton&family=Cormorant+Garamond&family=Dancing+Script&family=Dongle&family=Hubballi&family=Josefin+Sans&family=Philosopher&family=Poppins:wght@500;600&family=Roboto&family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap');
+
+/* common css */
+body{
+    background: linear-gradient(90deg, #e6ded7 0%, #ffdbe8 100%);
+}
+
+.gradient-text{
+    background: #9eb2d6;
+    background: -webkit-linear-gradient(to right, #4164a7 0%, #a86abb 100%);
+    background: -moz-linear-gradient(to right, #112447 0%, #804094 100%);
+    background: linear-gradient(to right, #506b9c 0%, #d774f5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* heading */
+.heading-text{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.sub-heading{
+    font-family: 'Hubballi', cursive;
+    font-size: 1.1em;
+    text-align: center;
+}
+/* search field */
+.search-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.input-field input{
+    width: 25em;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #e3d9e6;
+    padding: 3px 8px;
+    font-size: 1em;
+    box-shadow: rgba(236, 241, 245, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+input:focus{
+    outline-style: none;
+    color: #482155;
+    
+    
+    
+}
+
+.search-field button{
+    border: 1px solid #c9a8d3;
+    padding: 3px 20px;
+    font-size: 1.2em;
+    box-shadow: rgba(236, 241, 245, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+/* error message */
+#error{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(168, 48, 48);
+    display: none;
+
+}
+/* result container styling */
+.result-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 31em;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    /* display: none; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: linear-gradient(90deg, #9eb2d6 0%, #d69ee7 100%);
+}
+.weather-info th,td{
+    line-height: 0.6;
+    font-size: 1.1em;
+    font-family: 'Hubballi', cursive;
+    
+}
+.weather-info h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.weather-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-img p{
+    font-family: 'Hubballi', cursive;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: -20px;
+}
+.weather-img img{
+    width: 100px;
+    margin-right: 10px;
+}
+    
+
+
+   
+/* media queries for responsiveness */
+
+/* for mobile view */
+@media (max-width:688px) {
+    .heading-text{
+        font-size: 1.5em;
+    }
+    .input-field input{
+        width: 10em;
+        height: 1.8em;
+    }
+input:focus{
+        transition: 0.5s;
+        outline: none;
+        border-image:linear-gradient(45deg,blue,red) 10;
+    }
+    .search-field button{
+        padding: 3px 15px;
+        font-size: 0.8em;
+    }
+    .result-container{
+        display: flex;
+        flex-direction: column;
+        width: 18em;
+        margin-top: 30px;
+    }
+    .weather-info{
+        order: 2;;
+    }
+    .weather-img{
+        order: 1
+    }
+
+}
